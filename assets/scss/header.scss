@@ -1,0 +1,75 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Ulya Puspa Dewi
+Create        :  30 Maret 2022
+Last Update   :  30 Maret 2022
+
+Contents  :
+  1: Header
+  2: Main Logo, Kanal Logo
+  3. Menu Sidebar
+  4. Searchbar
+
+  Copyright (c) 2022 Ulya Puspa Dewi
+  
+========================================================================== */
+
+#menu {
+	background-color: #ffffff79;
+}
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+ul.navbar-nav {
+	float: right;
+	text-align: center;
+	li {
+		padding: 0 10px;
+	}
+}
+.container-fluid {
+	padding: 0 1em;
+}
+.navbar-nav {
+	li {
+		a {
+			color: black !important;
+			font-size: 1.2em;
+			font-family: Century gothic,sans-serif;
+			font-weight: 600;
+			transition: 0.4s ease;
+			&:hover {
+				color: #fff !important;
+				background-color: black !important;
+			}
+		}
+	}
+}
+.navbar-brand {
+	padding: 10px 15px !important;
+}
+a.navbar-brand {
+	.fa-globe {
+		font-size: 30px;
+		color: black;
+		transition: 0.5s ease;
+		&:hover {
+			color: #3935e6;
+		}
+	}
+}
+.navbar-inverse {
+	.navbar-toggle {
+		.icon-bar {
+			background-color: black !important;
+		}
+		&:hover {
+			background-color: #fff !important;
+		}
+		&:focus {
+			background-color: #fff !important;
+		}
+	}
+	border: none !important;
+}

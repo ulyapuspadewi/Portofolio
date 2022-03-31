@@ -1,0 +1,24 @@
+@charset 'utf-8';
+/* ==========================================================================
+Author        :  Ulya Puspa Dewi
+Create        :  30 Maret 2022
+Last Update   :  30 Maret 2022
+
+Contents  :
+  1: Global Setting ( fonts, default color, heading, etc)
+
+  Copyright (c) 2022 Ulya Puspa Dewi
+  
+========================================================================== */
+html {
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+}
+small {
+  font-size: 1.5rem;
+}
+.swiper-notification{
+  display: none!important;
+}

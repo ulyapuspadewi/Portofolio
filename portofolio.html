@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d37a5d2a26.js" crossorigin="anonymous"></script>
+    <link href="assets/css/styles.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-globe"></i></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container-fluid splash" id="splash">
+            <div class="container">
+                <img src="assets/image/hijab.jpg" alt="Portrait of Mrs. Ulya" class="profile-image">
+                <h1>HELLO!</h1>
+                <h1 class="intro-text"><span class="lead" id="typed">I am a </span></h1>
+                <span class="continue"><a href="#about"><i class="fa fa-angle-down"></i></a></span>
+            </div>
+        </div>
+        <!-- About Section -->
+        <section class="success" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About Me</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p class="content-text" style="text-align:justify;">Hey there! I am a junior software developer
+                            based in Jakarta. I work with some of the popular front end technologies to create
+                            beautiful websites that get noticed. I seek experience to gain more knowledge in the web
+                            development field.
+                        </p>
+                        <p class="content-text">If you are in need of a beautiful simple website, I'm ready. I look
+                            forward to talking to you soon!</p>
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2 text-center contact-button">
+                        <a href="#contact" class="btn btn-lg btn-outline">
+                            <i class="fa fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clear" id="skill">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>Skill</h2>
+                        <hr class="star-light">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <span>HTML</span><span>CSS/SCSS</span><span>Javascript</span><span>Jquery</span>
+                            <span>SQL</span><span>PHP</span><span>React</span><span>Materialize</span>
+                            <span>Bootstrap</span><span>AMP</span><span>SVN/GIT</span><span>Tracking</span>
+                            <span>Logging</span><span>Problem Solving</span><span>Team
+                                Work</span><span>Reporting Issue Identification</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide edu">
+                        <h2>Education</h2>
+                        <hr class="star-light">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p class="content-text small">SEPT 2014 - JAN 2018</p>
+                            <p class="content-text" style="margin: 0;">UNIVERSITAS AMIKOM YOGYAKARTA (GPA: 3.72)</p>
+                            <p class="content-text">Bachelor of Information Systems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <div class="container-fluid portfolio-container-holder content-section" id="portfolio">
+            <div class="portfolio-container container">
+                <h1 class="text-center">My Portfolio</h1>
+                <hr class="star-portfolio">
+                <div class="row">
+
+                    <div class="col-md-12 col-xs-12 col-sm-12 portfolio-card-holder">
+                        <div class=" portfolio-card">
+                            <img onclick="openModal();currentSlide(1)" src="assets/image/okezone.png" alt="Portfolio"
+                                class="img-responsive portfolio-img">
+                        </div>
+                        <div class="portfolio-img-desc">
+                            <div class="project-tile" onclick="openModal();currentSlide(1)">
+                                <p class="icons">
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </p>Okezone.com
+                            </div>
+                            <small>
+                                Built and maintenance using HTML, CSS/SCSS/SASS, Javascript, and JQuery.
+                                Create Accelerated Mobile Pages.
+                            </small>
+                            <p>
+                                Okezone.com is an online news portal owned by MNC Group.
+                            </p>
+                            <div class="buttons"><a href="https://www.okezone.com/" target="_blank"
+                                    rel="noopener noreferrer">Try it Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 col-sm-12 portfolio-card-holder">
+                        <div class=" portfolio-card">
+                            <img onclick="openModal();currentSlide(2)" src="assets/image/sportstars.png" alt="Portfolio"
+                                class="img-responsive portfolio-img">
+                        </div>
+                        <div class="portfolio-img-desc">
+                            <div class="project-tile" onclick="openModal();currentSlide(2)">
+                                <p class="icons">
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-sass"></i>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </p>Sportstars.id
+                            </div>
+                            <small>
+                                Built and maintenance using HTML, SCSS/SASS, Bootstrap, Javascript, and JQuery.
+                                Create Accelerated Mobile Pages.
+                            </small>
+                            <p>
+                                Sportstars.id is a sports portal that is part of MNC Group.
+                            </p>
+                            <div class="buttons"><a href="https://www.sportstars.id/" target="_blank"
+                                    rel="noopener noreferrer">Try it Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 col-sm-12 portfolio-card-holder">
+                        <div class=" portfolio-card">
+                            <img onclick="openModal();currentSlide(3)" src="assets/image/celebrities.png"
+                                alt="Portfolio" class="img-responsive portfolio-img">
+                        </div>
+                        <div class="portfolio-img-desc">
+                            <div class="project-tile" onclick="openModal();currentSlide(3)">
+                                <p class="icons">
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-sass"></i>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </p>Celebrities.id
+                            </div>
+                            <small>
+                                Built and maintenance using HTML, SCSS/SASS, Bootstrap, Materialize, Javascript, and
+                                JQuery.
+                                Create Accelerated Mobile Pages.
+                            </small>
+                            <p>
+                                A portal around celebrities and lifestyle that is part of MNC Group.
+                            </p>
+                            <div class="buttons"><a href="https://www.celebrities.id/" target="_blank"
+                                    rel="noopener noreferrer">Try it Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 col-sm-12 portfolio-card-holder">
+                        <div class=" portfolio-card">
+                            <img onclick="openModal();currentSlide(4)" src="assets/image/idxchannel.png" alt="Portfolio"
+                                class="img-responsive portfolio-img">
+                        </div>
+                        <div class="portfolio-img-desc">
+                            <div class="project-tile" onclick="openModal();currentSlide(4)">
+                                <p class="icons">
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                </p>IDX Channel
+                            </div>
+                            <small>
+                                Built using HTML, CSS, Javascript, and JQuery.
+                                Create Accelerated Mobile Pages.
+                            </small>
+                            <p>
+                                A websites that provide information about domestic and foreign stock
+                                exchanges.
+                            </p>
+                            <div class="buttons"><a href="https://www.idxchannel.com/" target="_blank"
+                                    rel="noopener noreferrer">Try it Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 col-sm-12 portfolio-card-holder">
+                        <div class=" portfolio-card">
+                            <img onclick="openModal();currentSlide(5)" src="assets/image/highend.png" alt="Portfolio"
+                                class="img-responsive portfolio-img">
+                        </div>
+                        <div class="portfolio-img-desc">
+                            <div class="project-tile" onclick="openModal();currentSlide(5)">
+                                <p class="icons">
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </p>Highend Magazine
+                            </div>
+                            <small>
+                                Built and maintenance using HTML, CSS, Javascript, and JQuery.
+                                Create Accelerated Mobile Pages.
+                            </small>
+                            <p>
+                                HighEnd Magazine is Indonesia's first exclusive fashion and lifestyle
+                                magazine part of MNC Group.
+                            </p>
+                            <div class="buttons"><a href="https://highend-magazine.okezone.com/" target="_blank"
+                                    rel="noopener noreferrer">Try it Live <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 col-sm-12 portfolio-card-holder">
+                        <div class=" portfolio-card">
+                            <img onclick="openModal();currentSlide(6)" src="assets/image/dewisri.png" alt="Portfolio"
+                                class="img-responsive portfolio-img">
+                        </div>
+                        <div class="portfolio-img-desc">
+                            <div class="project-tile" onclick="openModal();currentSlide(6)">
+                                <p class="icons">
+                                    <i class="fa-brands fa-php"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </p>Toko Kue Online Dewi Sri
+                            </div>
+                            <small>
+                                Built using PHP, MySQL, HTML, CSS, Javascript, and JQuery.
+                            </small>
+                            <p>
+                                This is a full-stack website that I made for undergraduate thesis: Website Based Cake
+                                Sale
+                                Information System at Dewi Sri SME
+                            </p>
+                            <div class="buttons"><a href="https://github.com/ulyapuspadewi/dewisri.git" target="_blank"
+                                    rel="noopener noreferrer">View source <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- more portofolio -->
+        <div id="more-portofolio">
+            <div class="container">
+                <h1 class="intro-text text-center">Another Portofolio</h1>
+                <div class="row">
+    
+                    <div class="col-md-4 col-xs-6 col-sm-4 portfolio-card-holder">
+                        <div class=" portfolio-card" onclick="openModal();currentSlide(7)">
+                            <img src="assets/image/okezonetv.png" alt="Portfolio" class="img-responsive portfolio-img">
+    
+                            <div class="portfolio-img-desc">
+                                <p>Okezone Tv</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 col-sm-4 portfolio-card-holder">
+                        <div class=" portfolio-card" onclick="openModal();currentSlide(8)">
+                            <img src="assets/image/saleskit.png" alt="Portfolio" class="img-responsive portfolio-img">
+    
+                            <div class="portfolio-img-desc">
+                                <p>Saleskit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 col-sm-4 portfolio-card-holder">
+                        <div class=" portfolio-card" onclick="openModal();currentSlide(9)">
+                            <img src="assets/image/snmptn.png" alt="Portfolio" class="img-responsive portfolio-img">
+    
+                            <div class="portfolio-img-desc">
+                                <p>SNMPTN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 col-sm-4 portfolio-card-holder">
+                        <div class=" portfolio-card" onclick="openModal();currentSlide(10)">
+                            <img src="assets/image/3M.png" alt="Portfolio" class="img-responsive portfolio-img">
+    
+                            <div class="portfolio-img-desc">
+                                <p>3M Science Games</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 col-sm-4 portfolio-card-holder">
+                        <div class=" portfolio-card" onclick="openModal();currentSlide(11)">
+                            <img src="assets/image/kominfo.png" alt="Portfolio" class="img-responsive portfolio-img">
+    
+                            <div class="portfolio-img-desc">
+                                <p>Anugrah Jurnalistik Kominfo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 col-sm-4 portfolio-card-holder">
+                        <div class=" portfolio-card" onclick="openModal();currentSlide(12)">
+                            <img src="assets/image/gonogini.png" alt="Portfolio" class="img-responsive portfolio-img">
+    
+                            <div class="portfolio-img-desc">
+                                <p>Penyewaan Tenda Gonogini</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="assets/image/okezone.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/sportstars.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/celebrities.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/idxchannel.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/highend.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/dewisri.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/okezonetv.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/saleskit.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/snmptn.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/3M.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/kominfo.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="assets/image/gonogini.png" style="width:100%">
+                </div>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="row footer-row">
+                <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                    <h4 class="text-center">Found me here</h4>
+                    <address>
+                        <div class="text-center contact-button">
+                            <a href="https://drive.google.com/file/d/1kBmbyaQf7u3UwhPwrlAJDBq-JT8oiE7d/view?usp=sharing"
+                                target="_blank" class="btn btn-lg btn-outline">
+                                <i class="fa-solid fa-file"></i> RESUME
+                            </a>
+                        </div>
+                        <a class="tel" href="tel:+6282242407644" type="tel"><i class="fa fa-mobile"></i><span> +62
+                                82242407644</span></a>
+                        <br />
+                        <a class="tel"
+                            href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=ulyapuspadewi@gmail.com"
+                            target="_blank"><i class="fa-solid fa-envelope"></i> ulyapuspadewi@gmail.com</a>
+                    </address>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-sm-6 social-section">
+                    <div class="text-center">
+                        <h4 class="text-center">Also, I can be found here</h4>
+                        <div class="text-center social-buttons">
+                            <a href="https://www.linkedin.com/in/ulya-puspa-dewi-3b2466146/"
+                                class="btn btn-default btn-lg social-button link-linkedin" target="_blank"><i
+                                    class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/ulyapd"
+                                class="btn btn-default btn-lg social-button link-instagram" target="_blank"><i
+                                    class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/ulyapuspadewi"
+                                class="btn btn-default btn-lg social-button link-github" target="_blank"><i class="fa fa-github"></i>
+                            </a>
+                        </div>
+                        <hr class="footer-hr">
+                        <h4 class="author">
+                            Copyrights <i class="fa-solid fa-copyright"></i>  2022 Ulya Puspa
+                                Dewi <br /> All Rights Reserved — Made with<i class="fa fa-heart"></i>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // slider
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            loop: true,
+            effect: 'slide',
+            speed: 500,
+            centeredSlides: true,
+            autoplay: 1000,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
+</body>
+
+</html>
