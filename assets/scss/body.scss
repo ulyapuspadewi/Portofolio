@@ -178,7 +178,7 @@ h1.intro-text {
 }
 
 #contact {
-  padding-top: 4em !important;
+  padding-top: 2em !important;
 }
 
 section {
@@ -605,5 +605,10 @@ p.content-text {
 
   .portfolio-img-desc {
     width: 100%;
+    margin-top: 10px;
+    p{
+      font-size: 1rem;
+      margin: 0;
+    }
   }
 }
